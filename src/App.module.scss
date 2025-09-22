@@ -1,0 +1,126 @@
+// 🎨 Variables
+$bg-color: #121212;
+$primary: #4ade80; // green accent
+$secondary: #38bdf8; // blue accent
+$text-light: #f9fafb;
+$text-dim: #9ca3af;
+$card-bg: rgba(255, 255, 255, 0.08);
+$card-border: rgba(255, 255, 255, 0.2);
+$radius: 1rem;
+
+// ✨ App Container
+.app {
+  background: $bg-color;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: $text-light;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+// 🔝 Header
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: $primary;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.selectLabel {
+  font-size: 0.9rem;
+  color: $text-dim;
+}
+
+.select{
+  margin-left: 0.5rem;
+  background: $card-bg;
+  border: 1px solid $card-border;
+  color: $text-light;
+  padding: 0.4rem 0.6rem;
+  border-radius: $radius;
+  outline: none;
+
+  &:focus {
+    border-color: $primary;
+  }
+}
+
+.btn {
+  background: linear-gradient(135deg, $primary, $secondary);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: $radius;
+  color: $bg-color;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+  }
+
+  &:focus {
+    outline: 2px solid $primary;
+    outline-offset: 2px;
+  }
+}
+
+// 📊 Stats
+.stats {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: $text-dim;
+}
+
+.stat {
+  background: $card-bg;
+  padding: 0.4rem 0.8rem;
+  border-radius: $radius;
+}
+
+// 🎲 Board
+.boardWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.board {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 420px;   // lock board size
+  max-height: 420px;  // keep it square
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+// ♿ Screen reader
+.srOnly {
+  position: absolute;
+  left: -9999px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

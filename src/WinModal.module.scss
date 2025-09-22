@@ -1,0 +1,81 @@
+$bg-blur: rgba(0, 0, 0, 0.6);
+$modal-bg: rgba(20, 20, 20, 0.95);
+$primary: #4ade80;
+$secondary: #38bdf8;
+$text-light: #f9fafb;
+$radius: 1rem;
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $bg-blur;
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: $modal-bg;
+  padding: 2rem;
+  border-radius: $radius;
+  text-align: center;
+  max-width: 300px;
+  width: 90%;
+  color: $text-light;
+  animation: popIn 0.3s ease forwards;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, $primary, $secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+
+  p {
+    margin: 0.3rem 0;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  background: linear-gradient(135deg, $primary, $secondary);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: $radius;
+  color: #121212;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

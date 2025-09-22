@@ -1,0 +1,10 @@
+// small mixins to avoid duplication
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin smooth-transition($props...) {
+  transition: $props 350ms cubic-bezier(.2,.9,.3,1);
+}
