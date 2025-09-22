@@ -12,6 +12,7 @@ const emojiPool = [
   "🛸","💡","🥦","🎧","🚀","🦋","🏝","📀"
 ];
 
+
 export default function App() {
   const [difficulty, setDifficulty] = useState("medium");
   const [cards, setCards] = useState([]);
@@ -162,7 +163,7 @@ export default function App() {
   return (
     <div className={styles.app}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Emoji Memory</h1>
+        <h1 className={styles.title}>i-Memorize mo!</h1>
 
         <div className={styles.controls}>
           <label className={styles.selectLabel}>
