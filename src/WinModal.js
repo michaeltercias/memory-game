@@ -71,7 +71,7 @@ export default function WinModal({ time, moves, best, onRestart, onClose }) {
             onClose();
           }}
         >
-          Restart Game
+          New Game
         </button>
       </div>
     </div>
