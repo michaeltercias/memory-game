@@ -1,6 +1,6 @@
 .modalContainer {
   position: fixed;
-  top: 20px;          /* near the top */
+  top: 20px; /* near the top */
   left: 50%;
   transform: translateX(-50%);
   z-index: 2000;
@@ -8,16 +8,22 @@
 }
 
 .modal {
-   background: linear-gradient(135deg, #38bdf8, #4ade80);
+  background: linear-gradient(135deg, #38bdf8, #4ade80);
   color: #fff;
   padding: 0.7rem 1.2rem;
   border-radius: 0.8rem;
-  box-shadow: 0 8px 28px rgba(2,6,23,0.6);
+  box-shadow: 0 8px 28px rgba(2, 6, 23, 0.6);
   font-weight: 600;
   animation: pop 0.25s ease-out;
 }
 
 @keyframes pop {
-  from { transform: scale(0.85); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

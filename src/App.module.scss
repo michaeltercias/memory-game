@@ -6,7 +6,7 @@ $text-light: #f9fafb;
 $text-dim: #9ca3af;
 $card-bg: rgba(255, 255, 255, 0.08);
 $card-border: rgba(255, 255, 255, 0.2);
-$radius: .7rem;
+$radius: 0.7rem;
 
 // ✨ App Container
 .app {
@@ -46,7 +46,7 @@ $radius: .7rem;
   color: $text-dim;
 }
 
-.select{
+.select {
   margin-left: 0.5rem;
   background: $bg-color;
   border: 1px solid $card-border;
@@ -108,13 +108,12 @@ $radius: .7rem;
 .board {
   display: grid;
   gap: 0.5rem;
-  max-width: 420px;   // lock board size
-  max-height: 420px;  // keep it square
+  max-width: 420px; // lock board size
+  max-height: 420px; // keep it square
   margin: 0 auto;
   width: 100%;
   height: 100%;
 }
-
 
 // ♿ Screen reader
 .srOnly {
