@@ -6,7 +6,7 @@ $text-light: #f9fafb;
 $text-dim: #9ca3af;
 $card-bg: rgba(255, 255, 255, 0.08);
 $card-border: rgba(255, 255, 255, 0.2);
-$radius: 1rem;
+$radius: .7rem;
 
 // ✨ App Container
 .app {
@@ -48,7 +48,7 @@ $radius: 1rem;
 
 .select{
   margin-left: 0.5rem;
-  background: $card-bg;
+  background: $bg-color;
   border: 1px solid $card-border;
   color: $text-light;
   padding: 0.4rem 0.6rem;
