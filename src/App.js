@@ -4,7 +4,7 @@ import Card from "./Card";
 import MatchModal from "./MatchModal";
 import WinModal from "./WinModal";
 
-// Emoji pool for up to 8x8
+// Emoji pool for up to 8x8 
 const emojiPool = [
   "🍎", "⚓", "🍺", "🐱", "🐉", "🌞", "🎲", "🍔",
   "🚗", "🎵", "🌈", "🔥", "🍕", "🐠", "🌍", "🎁",
